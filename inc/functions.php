@@ -277,8 +277,11 @@ function veintiv_customize_controls_enqueue_scripts() {
 			'colorVars'		=> array(
 				'footer'	=> array( 'setting' => 'veintiv_footer_background_color' ),
 			),
+			
+			/* Not yet
 			'fonts'			=> veintiv_get_fonts(),
 			'fontVariants'	=> veintiv_get_font_styles(),			
+			*/
 		)
 	);
 	wp_enqueue_style( 'veintiv-customize-controls', VEINTIV_ASSETS_URI . '/css/veintiv-customize-controls.css', VEINTIV_VERSION, true );
@@ -291,7 +294,10 @@ add_action( 'customize_controls_enqueue_scripts', 'veintiv_customize_controls_en
  */
 function veintiv_theme_styles() {
 	wp_enqueue_style( 'veintiv-twentytwenty', VEINTIV_ASSETS_URI . '/css/veintiv.css', array(), VEINTIV_VERSION );	
+	
+	/* Not Yet
 	wp_enqueue_style( 'veintiv-theme-fonts', veintiv_fonts_url(), array(), null );
+	*/
 }
 add_action( 'wp_enqueue_scripts', 'veintiv_theme_styles', 12 );	
 
@@ -333,8 +339,10 @@ function veintiv_body_class( $classes ) {
 		$classes[] = 'viv-h1-font-' . $h1_font_size;
 	}
 	
+	if (get_theme_mod('veintiv_body_font_size')) {
 	if ( $body_font_size = get_theme_mod( 'veintiv_body_font_size', veintiv_get_default_body_font_size() ) ) {
 		$classes[] = 'viv-site-font-' . $body_font_size;
+	}
 	}
 
 	if ( $body_line_height = get_theme_mod( 'veintiv_body_line_height' ) ) {
@@ -917,7 +925,7 @@ function veintiv_print_editor_customizer_css() {
 	$css = '';
 
 	$body_font 				= get_theme_mod( 'veintiv_body_font' );
-	$body_font_size 		= get_theme_mod( 'veintiv_body_font_size', veintiv_get_default_body_font_size() );
+	//$body_font_size 		= get_theme_mod( 'veintiv_body_font_size', veintiv_get_default_body_font_size() );
 	$heading_font 			= get_theme_mod( 'veintiv_heading_font' );
 	$heading_font_weight 	= get_theme_mod( 'veintiv_heading_font_weight', '700' );
 	$secondary_font 		= get_theme_mod( 'veintiv_secondary_font' );
@@ -1074,7 +1082,9 @@ add_action( 'enqueue_block_editor_assets', 'veintiv_print_editor_customizer_css'
 function veintiv_theme_support() {
 
 	// Set editor font sizes based on body font-size
+	if (get_theme_mod('veintiv_body_font_size')) {
 	$body_font_size = get_theme_mod( 'veintiv_body_font_size', veintiv_get_default_body_font_size() );
+	}
 
 	$font_sizes = current( (array) get_theme_support( 'editor-font-sizes' ) );
 
@@ -1119,7 +1129,9 @@ function veintiv_theme_support() {
 	add_theme_support( 'editor-font-sizes', $font_sizes );
 
 }
+
 add_action( 'after_setup_theme', 'veintiv_theme_support', 12 );
+
 
 /**
  * Display a different logo on Cover Template.
