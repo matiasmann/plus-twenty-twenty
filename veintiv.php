@@ -6,7 +6,8 @@
  * Author: Matias Mann
  * Author URI: https://github.com/matiasmann
  * Version: 1.0.1
- * License: GPLv3 or later
+ * Text Domain: veintiv
+ * License: GPLv2 or later
  *
  * @package veintiv
  */
