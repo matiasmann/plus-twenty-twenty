@@ -1,4 +1,4 @@
-=== Twenty Twenty Plus ===
+=== Customizer for Twenty Twenty ===
 Contributors: matiasmann
 Tags: twentytwenty, awesome, blocks, customizer, templates, twenty-twenty, twentytwenty 
 Requires at least: 5.3
@@ -23,7 +23,7 @@ What is Customizable right now?
 
 = From within WordPress =
 1. Visit "Plugins > Add New"
-2. Search for "Twenty Twenty Plus"
+2. Search for "Customizer for Twenty Twenty"
 3. Install and activate
 
 == Frequently Asked Questions ==
@@ -32,7 +32,7 @@ What is Customizable right now?
 Yes! It  is a free and open source, and always will be.
 
 = Do you offer support? =
-Definitely. We offer support for the free plugin in the [WordPress.org forums](https://wordpress.org/support/plugin/twentytwentyplus).
+Definitely. We offer support for the free plugin in the [WordPress.org forums](https://wordpress.org/support/plugin/plus-twenty-twenty).
 
 Premium customers have access to our very own [support forum](https://developress.org/support).
 
@@ -42,19 +42,19 @@ We try to answer all questions - free or premium - within 48 hours. We know what
 We speak english and spanish natively. We are based in Buenos Aires, Argentina.
 
 = Where can I find documentation? =
-Right now please ask a question in the [WordPress.org forums](https://wordpress.org/support/plugin/twentytwentyplus)
+Right now please ask a question in the [WordPress.org forums](https://wordpress.org/support/plugin/plus-twenty-twenty)
 
 = Does Twenty Twenty Plus have a premium version? =
 Yes. Twenty Twenty Plus has a premium version which extends the available options in the Customizer. More colors, more options, page templates, google fonts and the same Awesome Support.
 
-You can learn more about Twenty Twenty Plus Premium [here](https://developress.org/twentytwentyplus/).
+You can learn more about Twenty Twenty Plus Premium [here](https://developress.org/plus-twenty-twenty/).
 
 = Where can I find the theme options? =
 All of our options can be found in the Customizer in 'Appearance > Customize'.
 
 == License ==
 
-Twenty Twenty Plus is licensed under the GNU General Public License v2 or later
+Customizer for Twenty Twenty is licensed under the GNU General Public License v2 or later
 
 More details [here](http://www.gnu.org/licenses/gpl-2.0.html).
 

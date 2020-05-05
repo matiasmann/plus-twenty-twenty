@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Twenty Twenty Plus
- * Plugin URI: https://github.com/matiasmann/twentytwentyplus
+ * Plugin Name: Customizer for Twenty Twenty
+ * Plugin URI: https://github.com/matiasmann/plus-twenty-twenty
  * Description: The Twenty Twenty theme is awesome. What if we make it awesomer? Twenty Twenty Plus provides lots of options to customize the theme use the WordPress Customizer and built in functions. 
  * Author: Matias Mann
  * Author URI: https://github.com/matiasmann
